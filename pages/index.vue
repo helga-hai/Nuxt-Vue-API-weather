@@ -1,24 +1,29 @@
 <template>
   <section class="container">
     <div>
-      <!-- <app-logo/> -->
       <h1 class="title">
-        Home page
+        Weather app
       </h1>
-      <h2 class="subtitle">
-      </h2>
       <div class="links">
+        <detail-page id="703448" />
+        <detail-page id="2643743" />
+        <detail-page id="5128638" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-//import AppLogo from '~/components/AppLogo.vue'
+import DetailPage from '~/components/DetailPage';
 
 export default {
+  // asyncData({ params }) {
+  //   return axios.get(`http://localhost:3000/api/weather/703448`).then(res => {
+  //     return { weather: res.data }
+  //   })
+  // },
   components: {
-    //AppLogo
+    DetailPage
   }
 }
 </script>
@@ -36,7 +41,7 @@ export default {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 77px;
   color: #35495e;
   letter-spacing: 1px;
 }

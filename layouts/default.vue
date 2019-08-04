@@ -1,15 +1,10 @@
 <template>
   <div>
-    <nav-links/>
     <nuxt/>
   </div>
 </template>
 <script>
-import NavLinks from '~/components/NavLinks';
 export default {
-  components: {
-    NavLinks
-  }
 }
 </script>
 
